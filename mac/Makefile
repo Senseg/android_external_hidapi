@@ -13,7 +13,7 @@ CXX=g++
 COBJS=hid.o
 CPPOBJS=../hidtest/hidtest.o
 OBJS=$(COBJS) $(CPPOBJS)
-CFLAGS+=-I../hidapi -Wall -g -c 
+CFLAGS+=-I../hidapi -Wall -g -c -arch i386 -arch x86_64
 LIBS=-framework IOKit -framework CoreFoundation
 
 
